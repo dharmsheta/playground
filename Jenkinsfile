@@ -29,6 +29,11 @@ pipeline {
             sh 'ls -al'
           }
         }
+        stage('Audit Checl') {
+          steps {
+            sh 'echo "audit has been checked"'
+          }
+        }
       }
     }
     stage('Result') {
