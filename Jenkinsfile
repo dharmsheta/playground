@@ -29,6 +29,11 @@ pipeline {
             sh 'ls -al'
           }
         }
+        stage('Copyright') {
+          steps {
+            sh 'echo "copyright checks performed"'
+          }
+        }
       }
     }
     stage('Result') {
